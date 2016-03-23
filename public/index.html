@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+  <meta charset="UTF-8">
+  <title>Dummy</title>
+</head>
+<body ng-controller="MainController">
+  <form>
+    <input type="text" class="form-control" ng-model="search.name">
+    <button type="button" ng-click="wikiTodo()">Search</button>
+  </form>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js"></script>
+  <div>
+  <div>
+      <pre ng-bind="wikiData | json"></pre>
+  </div>
+  </div>
+  <script src='app.js'></script>
+</body>
+</html>
