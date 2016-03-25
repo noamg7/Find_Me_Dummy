@@ -7,7 +7,6 @@ app.factory('wikiService', function($http) {
         //     return $http.jsonp('http://es.wikipedia.org/w/api.php?titles=' + country.name.toLowerCase() + '&rawcontinue=true&action=query&format=json&prop=extracts&callback=JSON_CALLBACK');
         get: function(individual) {
           return $http.jsonp('https://en.wikipedia.org/w/api.php?action=query&format=json&prop=info%7Ccategories%7Cimages%7Ctemplates&titles=' + individual.name+ '&callback=JSON_CALLBACK');
-
         }
     };
 
